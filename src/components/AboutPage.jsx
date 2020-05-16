@@ -8,14 +8,15 @@ const Wrapper = styled.div`
 const Content = styled.div`
   width: 200px;
   padding: 20px;
+  font-size: 30px;
 `
 
 const AboutPage = () => {
   return (
     <Wrapper>
-      <Content>Styled component...</Content>
-      <Content>Styled component...</Content>
-      <Content>Styled component...</Content>
+      <Content><i className="fa fa-coffee" /></Content>
+      <Content><i className="fa fa-search" /></Content>
+      <Content><i className="fa fa-bank" /></Content>
     </Wrapper>
   );
 };

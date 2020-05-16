@@ -24,7 +24,7 @@ main {
 }
 
 .non-js {
-.hidden {
-    display: inline-block;
-}
+    .hidden {
+        display: inline-block;
+    }
 }
