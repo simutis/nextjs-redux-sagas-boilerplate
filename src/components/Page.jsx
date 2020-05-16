@@ -1,8 +1,12 @@
 import Link from 'next/link'
 import { connect } from 'react-redux'
-
+import styled from 'styled-components';
 import Counter from './Counter'
 import Clock from './Clock'
+
+const Wrapper = styled.div`
+  padding: 20px;
+`
 
 function Page({
     error,
@@ -14,7 +18,7 @@ function Page({
     title,
   }) {
   return (
-    <div>
+    <Wrapper>
       <h1>{title}</h1>
       <Clock lastUpdate={lastUpdate} light={light} />
       <Counter />
@@ -29,7 +33,7 @@ function Page({
         </pre>
       )}
       {error && <p style={{ color: 'red' }}>Error: {error.message}</p>}
-    </div>
+    </Wrapper>
   )
 }
 
