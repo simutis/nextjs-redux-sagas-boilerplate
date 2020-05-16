@@ -1,44 +1,3 @@
-# with Firebase Hosting example
-
-The goal is to host the Next.js app on Firebase Cloud Functions with Firebase Hosting rewrite rules so our app is served from our Firebase Hosting URL. Each individual `page` bundle is served in a new call to the Cloud Function which performs the initial server render.
-
-If you are having issues, feel free to tag @jthegedus in the [issue you create on the next.js repo](https://github.com/zeit/next.js/issues/new)
-
-<details>
-<summary><b>Make sure that firebase is set up and you have the projectID</b></summary>
-
-- Install Firebase Tools: `npm i -g firebase-tools`
-- Create a project through the [firebase web console](https://console.firebase.google.com/)
-- Login to the Firebase CLI tool with `firebase login`
-- Grab the **projectID** from [`firebase projects:list`](https://firebase.google.com/docs/cli#admin-commands) or the web consoles URL: `https://console.firebase.google.com/project/<projectID>`
-  </details>
-
-## How to use
-
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npm init next-app --example with-firebase-hosting with-firebase-hosting-app
-# or
-yarn create next-app --example with-firebase-hosting with-firebase-hosting-app
-```
-
-Update `.firebaserc`: adding your firebase project ID
-
-### Download manually
-
-Download the example:
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-firebase-hosting
-cd with-firebase-hosting
-```
-
-Update `.firebaserc`: adding your firebase project ID
-
-Install it and run:
 
 ```bash
 npm install
@@ -54,15 +13,6 @@ npm run serve
 npm run deploy
 ```
 
-## Typescript
-
-To use Typescript, simply follow [Typescript setup](https://nextjs.org/learn/excel/typescript/setup) as normal (package.json scripts are already set).
-
-i.e: `npm install --save-dev typescript @types/react @types/node`
-
-Then you can create components and pages in `.tsx` or `.ts`
-
-**Only `src/next.config.js` and `firebaseFunctions.js` must remain in `*.js` format.**
 
 ## Good to know
 
